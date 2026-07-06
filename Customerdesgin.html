@@ -6,7 +6,8 @@
     <title>Customer Registration</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         body{
             background: linear-gradient(135deg,#4e73df,#1cc88a);
@@ -43,6 +44,58 @@
             background:#2e59d9;
             color:#fff;
         }
+		
+		.form-info-box {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 20px;
+    margin-top: 25px;
+    background: #f5f9ff;
+    border: 1px solid #d8e7ff;
+    border-left: 5px solid #3b82f6;
+    border-radius: 10px;
+}
+
+.info-icon {
+    width: 55px;
+    height: 55px;
+    min-width: 55px;
+    background: linear-gradient(135deg, #2563eb, #4f46e5);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.info-content h4 {
+    margin: 0 0 12px;
+    color: #1e3a8a;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.info-content ul {
+    margin: 0;
+    padding-left: 18px;
+}
+
+.info-content ul li {
+    margin-bottom: 8px;
+    color: #444;
+    line-height: 1.6;
+}
+
+.info-note {
+    margin-top: 15px;
+    padding: 12px;
+    background: #ffffff;
+    border-radius: 6px;
+    border-left: 4px solid #2563eb;
+    color: #555;
+}
     </style>
 </head>
 <body>
@@ -140,8 +193,29 @@
         </button>
 
     </form>
+<div class="form-info-box">
+    <div class="info-icon">
+        <i class="fas fa-info-circle"></i>
+    </div>
 
+    <div class="info-content">
+        <h4>Registration Guidelines</h4>
+
+        <ul>
+            <li>All fields marked as mandatory must be completed.</li>
+            <li>Please provide a valid mobile number and email address.</li>
+            <li>GST and PAN details should match official records.</li>
+            <li>Company information will be used for invoicing and communication.</li>
+            <li>Your information is secure and will remain confidential.</li>
+        </ul>
+
+        <div class="info-note">
+            <strong>Note:</strong> After submitting the form, our team will review your details and contact you if additional verification is required.
+			
+        </div>
+    </div>
 </div>
 
+</div>
 </body>
 </html>
